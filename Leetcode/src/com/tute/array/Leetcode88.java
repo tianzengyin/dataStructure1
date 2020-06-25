@@ -18,6 +18,7 @@ public class Leetcode88 {
      int[]  nums2 = {2,5,6};
      new Leetcode88().merge(nums1, 3,nums2 ,3 );
      System.out.println(Arrays.toString(nums1));
+        System.out.println("你好哈哈哈张世杰在吗");
     }
     @Test
     public void merge2Test(){
@@ -29,7 +30,7 @@ public class Leetcode88 {
         int len1 = m-1;
         int len2 = n-1;
         int len = nums1.length-1;
-        while (len1>=0&&len2>=0){
+        while (len1>=0 && len2>=0){
             if( nums1[len1]>nums2[len2]){
                 nums1[len]=nums1[len1];
                 len1--;
