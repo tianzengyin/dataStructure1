@@ -37,11 +37,16 @@ public class Lindcode35 {
         ListNode newHead = null;
         ListNode node = null;
         while (head!=null){
-            node = head;
-            head = head.next;
-
-            node.next = newHead;
-            newHead = node;
+//            node = head;
+//            head = head.next;
+//
+//            node.next = newHead;
+//            newHead = node;
+            node = head.next;
+            head.next = newHead;
+            //head=node;
+            newHead =head;
+            head=node;
         }
         return newHead;
     }
