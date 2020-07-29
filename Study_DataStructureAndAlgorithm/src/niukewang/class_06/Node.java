@@ -1,4 +1,4 @@
-package class_06;
+package niukewang.class_06;
 
 import java.util.ArrayList;
 
@@ -7,7 +7,7 @@ public class Node {
 	public int in;
 	public int out;
 	public ArrayList<Node> nexts;
-	public ArrayList<Edge> edges;
+	public ArrayList<niukewang.class_06.Edge> edges;
 
 	public Node(int value) {
 		this.value = value;

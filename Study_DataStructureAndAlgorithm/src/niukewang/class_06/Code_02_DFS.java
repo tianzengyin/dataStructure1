@@ -1,4 +1,4 @@
-package class_06;
+package niukewang.class_06;
 
 import java.util.HashSet;
 import java.util.Stack;

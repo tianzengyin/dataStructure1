@@ -1,6 +1,6 @@
 package niukewang.class_06;
 
-import class_06.Node;
+
 
 import java.util.HashSet;
 import java.util.LinkedList;

@@ -1,4 +1,6 @@
-package class_06;
+package niukewang.class_06;
+
+
 
 public class GraphGenerator {
 

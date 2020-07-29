@@ -1,4 +1,5 @@
-package class_06;
+package niukewang.class_06;
+
 
 import java.util.ArrayList;
 import java.util.HashMap;
