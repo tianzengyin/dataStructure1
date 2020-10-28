@@ -19,10 +19,29 @@ import java.util.Arrays;
  */
 public class Leetcode1491 {
     public static void main(String[] args){
-        int[] salary = Tool.generateIntArray(50, 1000, 5000);
+        int[] salary = Tool.generateIntArray(10, 1000, 5000);
         //int[] salary = {48000,59000,99000,13000,78000,45000,31000,17000,39000,37000,93000,77000,33000,28000,4000,54000,67000,6000,1000,11000};
-        double average = average1(salary);
+        int[] salary1 = new int[salary.length] ;
+        System.arraycopy(salary, 0, salary1, 0, salary.length);
+        for (int i : salary) {
+            if(i!=salary[salary.length-1] ){
+                System.out.print(i+"-");
+            }else {
+                System.out.println(i);
+            }
+
+        }
+        for (int i : salary1) {
+            if(i!=salary1[salary1.length-1] ){
+                System.out.print(i+"-");
+            }else {
+                System.out.println(i);
+            }
+        }
+        double average = average2(salary);
+        double average1 = average1(salary);
         System.out.println(average);
+        System.out.println(average1);
     }
     public static double average(int[] salary) {
         int isChange;
@@ -55,6 +74,16 @@ public class Leetcode1491 {
         int sum = Arrays.stream(salary).sum();
         return (sum-max-min)/(salary.length-2.0);
 
+    }
+    public static double average2(int[] salary) {
+        double sum = 0;
+        double maxValue = Integer.MIN_VALUE, minValue = Integer.MAX_VALUE;
+        for (int num : salary) {
+            sum += num;
+            maxValue = Math.max(maxValue, num);
+            minValue = Math.min(minValue, num);
+        }
+        return (sum - maxValue - minValue) / (salary.length - 2);
     }
 
 }
