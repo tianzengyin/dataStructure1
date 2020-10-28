@@ -20,6 +20,7 @@ public class ArrayList<E> extends AbstractList<E> {
 	/**
 	 * 清除所有元素
 	 */
+	@Override
 	public void clear() {
 		for (int i = 0; i < size; i++) {
 			elements[i] = null;
@@ -32,6 +33,7 @@ public class ArrayList<E> extends AbstractList<E> {
 	 * @param index
 	 * @return
 	 */
+	@Override
 	public E get(int index) { // O(1)
 		rangeCheck(index);
 		
@@ -44,6 +46,7 @@ public class ArrayList<E> extends AbstractList<E> {
 	 * @param element
 	 * @return 原来的元素ֵ
 	 */
+	@Override
 	public E set(int index, E element) { // O(1)
 		rangeCheck(index);
 		
@@ -57,7 +60,8 @@ public class ArrayList<E> extends AbstractList<E> {
 	 * @param index
 	 * @param element
 	 */
-	public void add(int index, E element) { 
+	@Override
+	public void add(int index, E element) {
 		/*
 		 * 最好：O(1)
 		 * 最坏：O(n)
@@ -79,6 +83,7 @@ public class ArrayList<E> extends AbstractList<E> {
 	 * @param index
 	 * @return
 	 */
+	@Override
 	public E remove(int index) {
 		/*
 		 * 最好：O(1)
@@ -100,6 +105,7 @@ public class ArrayList<E> extends AbstractList<E> {
 	 * @param element
 	 * @return
 	 */
+	@Override
 	public int indexOf(E element) {
 		if (element == null) {
 			for (int i = 0; i < size; i++) {

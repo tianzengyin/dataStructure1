@@ -1,6 +1,5 @@
-package com.mj.list;
+package com.mj.Stack.list;
 
-import com.mj.list.AbstractList;
 
 public class LinkedList<E> extends AbstractList<E> {
 	private Node<E> first;

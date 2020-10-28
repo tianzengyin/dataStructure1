@@ -1,4 +1,4 @@
-package com.mj.list;
+package com.mj.Stack.list;
 
 @SuppressWarnings("unchecked")
 public class ArrayList<E> extends AbstractList<E> {

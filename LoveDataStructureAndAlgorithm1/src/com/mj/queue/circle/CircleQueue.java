@@ -1,9 +1,9 @@
-package com.mj.circle;
+package com.mj.queue.circle;
 
 @SuppressWarnings("unchecked")
 public class CircleQueue<E> {
-	private int front;
-	private int size;
+	private int front;//存储队头元素的下标
+	private int size;//元素个数
 	private E[] elements;
 	private static final int DEFAULT_CAPACITY = 10;
 	
@@ -26,17 +26,18 @@ public class CircleQueue<E> {
 		front = 0;
 		size = 0;
 	}
-
+	//入队
 	public void enQueue(E element) {
 		ensureCapacity(size + 1);
-		
+		//elements[(front+size) % elements.length] = element;
 		elements[index(size)] = element;
 		size++;
 	}
-
+	//队头出队
 	public E deQueue() {
 		E frontElement = elements[front];
 		elements[front] = null;
+		//front = (front+1) % elements.length;
 		front = index(1);
 		size--;
 		return frontElement;
@@ -81,6 +82,7 @@ public class CircleQueue<E> {
 		int newCapacity = oldCapacity + (oldCapacity >> 1);
 		E[] newElements = (E[]) new Object[newCapacity];
 		for (int i = 0; i < size; i++) {
+			//newElements[i]=elements[(i+front)%elements.length];
 			newElements[i] = elements[index(i)];
 		}
 		elements = newElements;

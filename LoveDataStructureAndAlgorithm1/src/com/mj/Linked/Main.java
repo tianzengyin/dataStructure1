@@ -1,6 +1,6 @@
 package com.mj.Linked;
 
-import com.mj.circle.CircleLinkedList;
+import com.mj.Linked.circle.CircleLinkedList;
 
 public class Main {
 	

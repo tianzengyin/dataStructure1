@@ -1,4 +1,4 @@
-package com.mj.list;
+package com.mj.queue.list;
 
 public interface List<E> {
 	static final int ELEMENT_NOT_FOUND = -1;

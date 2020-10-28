@@ -1,7 +1,7 @@
-package com.mj;
+package com.mj.queue;
 
-import com.mj.list.LinkedList;
-import com.mj.list.List;
+import com.mj.queue.list.LinkedList;
+import com.mj.queue.list.List;
 
 public class Queue<E> {
 	private List<E> list = new LinkedList<>();
@@ -17,15 +17,15 @@ public class Queue<E> {
 	public void clear() {
 		list.clear();
 	}
-
+	//入队
 	public void enQueue(E element) {
 		list.add(element);
 	}
-
+	//出队
 	public E deQueue() {
 		return list.remove(0);
 	}
-
+	//返回对头
 	public E front() {
 		return list.get(0);
 	}

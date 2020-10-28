@@ -1,6 +1,6 @@
 package com.mj.Linked.circle;
 
-import com.mj.AbstractList;
+import com.mj.Linked.AbstractList;
 
 public class SingleCircleLinkedList<E> extends AbstractList<E> {
 	private Node<E> first;

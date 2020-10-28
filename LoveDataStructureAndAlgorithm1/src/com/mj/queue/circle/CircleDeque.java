@@ -1,4 +1,4 @@
-package com.mj.circle;
+package com.mj.queue.circle;
 
 @SuppressWarnings("unchecked")
 public class CircleDeque<E> {

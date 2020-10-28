@@ -1,4 +1,4 @@
-package com.mj;
+package com.mj.Trie;
 
 public class Main {
 

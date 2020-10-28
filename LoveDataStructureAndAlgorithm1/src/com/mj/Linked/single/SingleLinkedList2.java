@@ -1,6 +1,6 @@
 package com.mj.Linked.single;
 
-import com.mj.AbstractList;
+import com.mj.Linked.AbstractList;
 
 /**
  * 增加一个虚拟头结点

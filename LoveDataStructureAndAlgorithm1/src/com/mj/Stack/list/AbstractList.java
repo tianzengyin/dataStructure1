@@ -1,4 +1,4 @@
-package com.mj.list;
+package com.mj.Stack.list;
 
 public abstract class AbstractList<E> implements List<E>  {
 	/**
